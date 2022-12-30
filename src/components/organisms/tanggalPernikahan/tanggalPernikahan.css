@@ -1,0 +1,117 @@
+/* section tanggal pernikahan  */
+.section-tanggal{
+    height: 1000px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cdae8f;
+}
+
+.title-tanggal{
+    font-size: 36px;
+    text-decoration: underline;
+    margin-top: 60px;
+}
+
+.section-tanggal .desc{
+    width: 600px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.section-tanggal .desc .nama{
+    font-family: 'Rouge Script', cursive;
+    font-size: 36px;
+    margin-bottom: -20px;
+}
+
+.section-tanggal .desc-2{
+    font-size: 40px;
+    font-family: 'Rouge Script', cursive;
+}
+
+.mempelai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mempelai img{
+    position: absolute;
+}
+
+.laki{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.laki .foto-laki{
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid black; */
+    border-radius: 100px;
+    background-image: url('../../../assets/gambar/pria.jpg');
+    background-size:220px 220px;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: 34% 72%;
+
+}
+
+.laki .desc{
+    text-align: center;
+}
+
+.pr{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pr .foto-pr{
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid black; */
+    border-radius: 100px;
+    background-image: url('../../../assets/gambar/pr.jpg');
+    background-size:220px 220px;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: 65% 72%;
+}
+
+.pr .desc{
+    text-align: center;
+}
+
+@media(max-width:480px){
+    .title-tanggal{
+        font-size: 30px;
+    }
+
+    .section-tanggal .desc{
+        font-size: 16px;
+        width: 450px;
+    }
+
+    .laki{
+        width: 250px;
+    }
+
+    .pr{
+        width: 250px;
+    }
+
+    .laki .foto-laki{
+        background-position: 4% 72%;
+    
+    }
+
+}

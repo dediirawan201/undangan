@@ -1,0 +1,107 @@
+.gift{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(172, 166, 166, 0.4),
+    rgba(202, 194, 194, 0.6)),url('../../../assets/gambar/flower-bg.png');
+    background-attachment: fixed;
+    /* background-size: cover; */
+    
+}
+
+.gift-judul{
+    font-family: 'Rouge Script', cursive;
+    font-size: 80px;
+    font-weight:normal;
+}
+
+.gift .desc{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.gift .kartu-rekening{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.konfirmasi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.konfirm-hadiah{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.desc-konfirm{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight:400;
+    font-size: 14px;
+    margin-top: -10px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* input */
+.gift .form-label{
+    font-size: 16px;
+    font-style: italic;
+}
+
+.gift .form-check-label{
+    font-style: italic;
+}
+
+.gift form{
+    width: 600px;
+}
+.form-label span{
+    color: red;
+}
+
+.gift .btn-kirim{
+    width: 600px;
+    border-radius: 15px;
+}
+
+.gift .btn-kirim:hover{
+    background-color: rgb(42, 122, 26);
+}
+
+@media(max-width:480px){
+    .gift-judul{
+    font-size: 60px;
+    }
+    .konfirm-hadiah{
+        font-size: 25px;
+    }
+    .desc-konfirm{
+        font-size: 12px;
+    }
+    .konfirmasi{
+        width: 400px;
+    }
+
+    .gift form{
+        width: 400px;
+        padding: 10px;
+    }
+
+    .gift .btn-kirim{
+        width: 380px;
+        padding: 10px;
+    }
+
+}

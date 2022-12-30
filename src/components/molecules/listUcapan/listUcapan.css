@@ -1,0 +1,52 @@
+
+.list-ucapan{
+    width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    margin-top: 10px;
+
+    ;
+}
+
+.list-ucapan span{
+    text-transform: capitalize;
+}
+
+.wrapper-listUcapan{
+    display: flex;
+    /* height: 600px */
+}
+
+.list-ucapan .wrapper-listUcapan .kehadiran{
+    margin-right: 2px;
+    
+}
+
+.list-ucapan .wrapper-listUcapan .nama{
+    font-weight: bold;
+    margin-right: 10px;
+    
+}
+
+.ikon{
+    color: rgb(125, 213, 148);
+}
+
+.ikon-2{
+    color: red;
+}
+
+.ikon-3{
+    color: rgb(223, 158, 37);
+}
+
+.pesan{
+    font-style: italic;
+}
+
+.list-ucapan small{
+    font-size: 10px;
+}

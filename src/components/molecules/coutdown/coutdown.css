@@ -1,0 +1,37 @@
+
+.hero .coutdown{
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.hero .coutdown #hari::after{
+    content:'Hari'
+}
+
+.hero .coutdown #jam::after{
+    content:'Jam'
+}
+
+.hero .coutdown #menit::after{
+    content:'Menit'
+}
+
+.hero .coutdown #detik::after{
+    content:'Detik'
+}
+
+#hari, #jam, #menit, #detik{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-right: 10px;
+    width: 80px;
+    border-radius: 8px;
+    background-color: white;
+    color: #583e29;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    height: 80px;
+}

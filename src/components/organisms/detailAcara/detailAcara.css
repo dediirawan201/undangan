@@ -1,0 +1,99 @@
+/* detail acara  */
+.detail-acara{
+    height: 120vh;
+    color: white;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(118, 117, 117, 0.2),
+    rgba(188, 184, 184, 0.3)),url('../../../assets/gambar/bg-bunga.jpg');
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.detail-acara .judul{
+    font-family: 'Rouge Script', cursive;
+    font-size: 100px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.acara{
+    display: flex;
+    margin-top: -40px;
+    
+}
+.acara .acara-1{
+    border: 3px solid white;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 15px;
+    position: relative;
+    height: 350px;
+}
+
+.acara-1 img{
+    position: absolute;
+    bottom: -70px;
+    left: 125px;
+}
+
+.acara-1 h1{
+    font-family: 'Rouge Script', cursive;
+    font-weight: normal;
+}
+
+.map-live{
+    display: flex;
+
+}
+
+.map-live button{
+    /* padding: 12px; */
+    background-color: white;
+    color: black;
+    border-radius: 75px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition-duration: 0.5s;
+    width: 150px;
+    margin-right: 5px;
+    box-shadow: 5px 10px 20px;
+}
+
+
+.map-live .btn:hover{
+    background-color: blue;
+    color: white;
+}
+
+@media(max-width:480px){
+    .detail-acara .judul{
+    font-size: 60px;
+    margin-bottom: 30px;
+
+}
+    .acara{
+        flex-direction: column;
+    }
+
+    .detail-acara{
+        height: 900px;
+    }
+
+    .acara .acara-1{
+        margin-bottom: 10px;
+    }
+
+    .acara-1 img{
+    bottom: 0px;
+    left: 125px;
+}
+}

@@ -1,0 +1,31 @@
+.tambah-ucapan{
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.form-label{
+    font-size: 20px;
+
+}
+
+.tambah-ucapan .btn-simpan{
+    width: 560px;
+    border-radius: 20px;
+    border: none;
+}
+
+.tambah-ucapan .btn-simpan:hover{
+    background-color: rgb(61, 234, 72);
+    border: none;
+}
+
+@media(max-width:480px){
+    .col{
+        width: 340px;
+    }
+    .col button.btn-simpan{
+        width: 340px;
+    }
+}

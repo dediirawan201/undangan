@@ -1,0 +1,38 @@
+.kartu{
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(244, 237, 237);
+    margin: 10px;
+}
+span.copas{
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+span.copas:hover{
+    color: blue;
+}
+
+.line{
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+
+.wrapper-rek{
+    display: flex;
+    margin-top: 10px;
+}
+
+.nama-rekening{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+@media(max-width:480px){
+    .kartu{
+        width: 170px;
+        padding: 10px;
+
+    }
+}
