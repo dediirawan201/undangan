@@ -10,7 +10,7 @@ background-size: cover;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: all 3s ease-in-out;
+    transition: all 2s ease-in-out;
     color: white;
     z-index: 999;
 }
@@ -70,4 +70,23 @@ background-size: cover;
 .thumb .button:hover{
     background-color: skyblue;
     color: white;
+}
+
+@media(max-width:400px){
+    .thumb .pengantin{
+        font-size: 50px;
+
+    }
+
+    .thumb .undang{
+        font-size: 20px;
+    }
+
+    .thumb .tanggal{
+        font-size: 20px;
+    }
+
+    .thumb{
+        background-size:cover;
+    }
 }

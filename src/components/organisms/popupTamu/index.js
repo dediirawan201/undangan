@@ -3,7 +3,7 @@ import './popupTamu.css';
 import ringer  from '../../../assets/audio/Ngoni.mp3';
 
 const PopupTamu = ({play,audioRef}) => {
-    const [open,setOpen] = useState('flex');
+    const [open,setOpen] = useState('1');
     function GetURLParameter(sParam)
     {
         var sPageURL = window.location.search.substring(1);
@@ -22,18 +22,18 @@ const PopupTamu = ({play,audioRef}) => {
     var nama =decodeURI(pengantin)
     
     const klikUndangan = () => {
-        setOpen('100%')
+        setOpen('0')
         play()
     }
 
   return (
-    <div className={`thumb`} style={{marginTop:open}}>
+    <div className={`thumb`} style={{opacity:open}}>
             <p className="undang">Undangan Pernikahan</p>
             <p className="pengantin">Dedi Irawan & Rifty</p>
             <p className="tanggal">Minggu, 14 Februari 2023</p>
             <div className="tamu">
                 <p>Kepada Yth. <br/>
-                    Bpk/Ibu/Saudara/i</p>
+                    Bpk/Ibu/Saudara/i</p> 
                     <p id="nama-tamu">{nama}</p>
                     <span>di Tempat</span>
                 </div>

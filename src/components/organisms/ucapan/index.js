@@ -11,7 +11,7 @@ const Ucapan = ({tamu,setTamu}) => {
           ...tamu, data
         ]; 
         setTamu(newTamu)
-      }
+      } 
   return (
     <div className='ucapan'>
       <div className='ucapan-wrapper'>
