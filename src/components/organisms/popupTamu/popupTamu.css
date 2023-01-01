@@ -2,17 +2,17 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),
 rgba(0, 0, 0, 0.6)), url("../../../assets/gambar/gambar1.jpg");
 background-size: cover;
-    position: fixed;
+    position:fixed;
     height: 100vh;
     width: 100vw;
-    top: -1px;
+    /* top: -1px; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     transition: all 2s ease-in-out;
     color: white;
-    z-index: 999;
+    z-index: 998;
 }
 
 /* .thumb img{

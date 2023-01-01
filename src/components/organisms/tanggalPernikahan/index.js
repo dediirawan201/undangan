@@ -1,5 +1,5 @@
 import React from 'react'
-import { Bunga } from '../../../assets/gambar';
+import { Bunga, Pria, Wanita } from '../../../assets/gambar';
 import './tanggalPernikahan.css';
 
 const TanggalPernikahan = () => {
@@ -9,9 +9,10 @@ const TanggalPernikahan = () => {
             <p className="desc">Maha suci Allah SWT yang telah menciptakan makhluk-Nya berpasang-pasangan.
                 Ya Allah, perkenankanlah kami merangkai kasih sayang yang Kau ciptakan di antara putra-putri kami:</p>
                 <p className="desc-2">Pasangan Mempelai</p>
-            <div className="mempelai">
+            <div className="mempelai"> 
                 <div className="laki">
                     <div className="foto-laki"></div>
+                    <img src={Pria} width={200} height={200} alt='pria'/>
                     <div className="desc">
                         <p className="nama">Dedi Irawan</p>
                         <p>Putra dari Bapak Indu & Ibu Mariah</p>
@@ -20,6 +21,7 @@ const TanggalPernikahan = () => {
                 <img src={Bunga} width={200} height={200} alt="bunga"/>
                 <div className="pr">
                     <div className="foto-pr"></div>
+                    <img src={Wanita} width={200} height={200} alt='wanita'/>
                     <div className="desc">
                         <p className="nama">Dedi Irawan</p>
                         <p>Putra dari Bapak Indu & Ibu Mariah</p>

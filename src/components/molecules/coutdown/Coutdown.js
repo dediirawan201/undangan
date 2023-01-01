@@ -32,6 +32,6 @@ const Coutdown = () => {
     <div id="detik">{d}</div>
 </div>
   )
-}
+} 
 
 export default Coutdown

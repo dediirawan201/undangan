@@ -1,7 +1,7 @@
 .sound{
     position:fixed;
     background-attachment: fixed;
-    z-index: 999;
+    z-index: 997;
     bottom: 10px;
 
 }
@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    width: 35px;
     height: 40px;
     flex-grow: 1;
     position: absolute;
@@ -59,7 +59,7 @@
     cursor: pointer;
   }
 
-  @media(max-width:480px){
+  @media(max-width:400px){
     .sound{
         bottom: 40%;
     }
