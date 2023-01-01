@@ -74,8 +74,8 @@ background-size: cover;
 
 @media(max-width:480px){
     .thumb{
-        background-size:cover;
-        height: 140vh;
+        background-attachment: fixed;
+        height: 100vh;
     }
     .thumb .pengantin{
         font-size: 50px;
