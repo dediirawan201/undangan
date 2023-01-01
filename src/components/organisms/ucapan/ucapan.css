@@ -35,14 +35,14 @@
     /* min-height: 600px; */
 }
 
-@media(max-width:480px){
+@media(max-width:400px){
     .ucapan-wrapper{
-        width: 400px;
+        width: 90%;
     }
     .judul{
         font-size: 40px;
     }
     .container-listUcapan{
-        width: 400px;
+        width: 90%;
     }
 }
