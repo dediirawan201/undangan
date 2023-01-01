@@ -49,9 +49,9 @@
     font-size: 10px;
 }
 
-@media(max-width:400px){
+@media(max-width:480px){
     .list-ucapan{
-        width: 108%;
+        width: 100%;
         margin-left: -10px;
     }
 }

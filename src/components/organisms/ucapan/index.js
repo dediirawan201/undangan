@@ -13,7 +13,7 @@ const Ucapan = ({tamu,setTamu}) => {
         setTamu(newTamu) 
       } 
   return (
-    <div className='ucapan'>
+    <div className='ucapan'> 
       <div className='ucapan-wrapper'>
         <h1 className='mb-2 judul text-center'>Berikan Ucapan & Doa</h1>
         <TambahUcapan onTambahTamu={handleTambahTamu}/>

@@ -72,7 +72,11 @@ background-size: cover;
     color: white;
 }
 
-@media(max-width:400px){
+@media(max-width:480px){
+    .thumb{
+        background-size:cover;
+        height: 140vh;
+    }
     .thumb .pengantin{
         font-size: 50px;
 
@@ -86,7 +90,4 @@ background-size: cover;
         font-size: 20px;
     }
 
-    .thumb{
-        background-size:cover;
-    }
 }

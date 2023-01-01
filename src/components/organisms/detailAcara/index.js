@@ -16,7 +16,7 @@ const DetailAcara = () => {
                     <div className="map-live">
                         <button className="btn" type="button"><span>Buka Map</span> <span className="material-symbols-outlined">
                             location_on
-                            </span></button>
+                             </span></button>
                         <button className="btn" type="button"><span>Live</span> <span className="material-symbols-outlined">
                             join_right
                             </span></button>

@@ -80,7 +80,7 @@
     background-color: rgb(42, 122, 26);
 }
 
-@media(max-width:400px){
+@media(max-width:480px){
     .gift-judul{
     font-size: 60px;
     }
