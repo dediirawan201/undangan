@@ -10,7 +10,7 @@ const Ucapan = ({tamu,setTamu}) => {
         const newTamu = [
           ...tamu, data
         ]; 
-        setTamu(newTamu)
+        setTamu(newTamu) 
       } 
   return (
     <div className='ucapan'>

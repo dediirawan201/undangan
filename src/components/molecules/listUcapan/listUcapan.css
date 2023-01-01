@@ -7,8 +7,6 @@
     flex-direction: column;
     border: 1px solid white;
     margin-top: 10px;
-
-    ;
 }
 
 .list-ucapan span{
@@ -49,4 +47,11 @@
 
 .list-ucapan small{
     font-size: 10px;
+}
+
+@media(max-width:400px){
+    .list-ucapan{
+        width: 108%;
+        margin-left: -10px;
+    }
 }
