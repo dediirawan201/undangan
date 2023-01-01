@@ -21,9 +21,19 @@
     border: none;
 }
 
-@media(max-width:480px){
+@media(max-width:400px){
     .tambah-ucapan .col{
-        width: 66%;
+        width: 60%;
+        margin-left: -30px;
+    }
+    .tambah-ucapan .col button.btn-simpan{
+        width: 99%;
+    }
+}
+
+@media(max-width:370px){
+    .tambah-ucapan .col{
+        width: 50%;
         margin-left: -30px;
     }
     .tambah-ucapan .col button.btn-simpan{

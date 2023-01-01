@@ -98,3 +98,15 @@
     left: 125px;
 }
 }
+
+@media(max-width:370px){
+    .acara{
+        display: flex;
+        margin-top: -40px;
+        
+    }
+    .acara .acara-1{
+        width: 330px;
+        margin: 15px;
+    }
+}

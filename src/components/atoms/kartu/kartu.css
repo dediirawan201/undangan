@@ -36,3 +36,9 @@ span.copas:hover{
 
     }
 }
+
+@media(max-width:370px){
+    .kartu{
+        width: 70%;
+    }
+}

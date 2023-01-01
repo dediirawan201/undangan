@@ -77,14 +77,14 @@ const TambahUcapan = ({ onTambahTamu }) => {
 
   return (
     <form className="tambah-ucapan" onSubmit={handleFormSubmit}>
-      <div className="col mb-4">
+      <div className="mb-4 col inputan">
         <label htmlFor="nama" className="form-label">
           Nama
         </label>
         <input
           id="nama"
           type="text"
-          className="form-control"
+          className="form-control "
           name="nama"
           placeholder="Nama Lengkap"
           onChange={handleInputChange}
