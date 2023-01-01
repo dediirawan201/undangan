@@ -61,6 +61,6 @@
 
   @media(max-width:480px){
     .sound{
-        bottom: 200px;
+        bottom: 40%;
     }
   }

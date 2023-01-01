@@ -1,6 +1,7 @@
 
 .hero .coutdown{
     display: flex;
+    width: 80%;
     /* flex-direction: column; */
 }
 
@@ -27,7 +28,7 @@
     align-items: center;
     border: 1px solid white;
     margin-right: 10px;
-    width: 80px;
+    width: 100%;
     border-radius: 8px;
     background-color: white;
     color: #583e29;

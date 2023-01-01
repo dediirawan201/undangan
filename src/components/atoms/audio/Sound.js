@@ -13,7 +13,7 @@ const Sound = ({play,audioRef,isPlaying}) => {
         <div className='container-rotasi'>
         <img id='putar' src={Rose} width={50} height={50}
           alt='belajar'
-        />
+        /> 
         <div className='btn-container'>
       <div onClick={clickPlay} className={isPlaying ? 'btn-stop' : 'btn-play'}></div>
     </div>

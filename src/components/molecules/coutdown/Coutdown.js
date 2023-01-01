@@ -8,7 +8,7 @@ const Coutdown = () => {
   useEffect(() => {
     setTimeout(() => {
       setTime(time - 1);
-    },1000)
+    },1000) 
   },[time])
 
     let now = new Date().getTime()
