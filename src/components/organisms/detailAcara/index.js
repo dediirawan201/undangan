@@ -25,7 +25,7 @@ const DetailAcara = () => {
                 </div>
                 <div className="acara-1">
                     <h1>Resepsi Nikah</h1>
-                    <p>Minggu, 12 Januari 2022 <br/>
+                    <p>Minggu, 12 Januari 2022 <br/> 
                     10:00 - 12:00 WIB <br/>
                     <strong>Kediaman Keluarga Wanita</strong><br/>
                     Jalan alamat nikahan</p>

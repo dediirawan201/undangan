@@ -138,6 +138,7 @@ const Gift = () => {
         </div>
         {errors.hadiah && <small>{errors.hadiah}</small>}
       </div>
+      <div className='col'>
       <label  className="form-label">
           Tujuan <span>*</span>
         </label>
@@ -147,6 +148,7 @@ const Gift = () => {
   <option value='Mandiri 23232323 Dedi Irawan'>Mandiri 23232323 Dedi Irawan</option>
 </select>
 {errors.tujuan && <small>{errors.tujuan}</small>}
+      </div>
 <div className="col mt-4 mb-4">
         <label htmlFor="nominal" className="form-label">
           Nominal (Jika transfer)

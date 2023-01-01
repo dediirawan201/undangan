@@ -80,9 +80,14 @@
     background-color: rgb(42, 122, 26);
 }
 
-@media(max-width:480px){
+@media(max-width:400px){
     .gift-judul{
     font-size: 60px;
+    }
+
+    .gift .desc{
+        font-size: 20px;
+        width: 90%;
     }
     .konfirm-hadiah{
         font-size: 25px;
@@ -91,7 +96,7 @@
         font-size: 12px;
     }
     .konfirmasi{
-        width: 400px;
+        width: 90%;
     }
 
     .gift form{
@@ -102,6 +107,16 @@
     .gift .btn-kirim{
         width: 380px;
         padding: 10px;
+    }
+
+    .col{
+        width: 80%;
+        margin-left: 25px;
+    }
+
+    .col .btn-kirim{
+        width: 99%;
+        
     }
 
 }
