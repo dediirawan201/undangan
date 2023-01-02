@@ -6,7 +6,7 @@ import './tanggalPernikahan.css';
 const TanggalPernikahan = () => {
     
   return (  
-    <div className="section-tanggal" >
+    <div className="section-tanggal">
             <span className="title-tanggal" data-aos="fade-up">Bismillahirahmanirrahim</span>
             <p className="desc" data-aos="fade-up">Maha suci Allah SWT yang telah menciptakan makhluk-Nya berpasang-pasangan.
                 Ya Allah, perkenankanlah kami merangkai kasih sayang yang Kau ciptakan di antara putra-putri kami:</p>
