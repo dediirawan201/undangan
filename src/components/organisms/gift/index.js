@@ -81,18 +81,18 @@ const Gift = () => {
   };
   return (
     <div className='gift'>
-        <p className='gift-judul'>Berikan Hadiah</p>
-        <p className='desc'>Anda bisa memberikan hadiah digital atau lainya melalui website ini.</p>
+        <p className='gift-judul' data-aos="zoom-in">Berikan Hadiah</p>
+        <p className='desc' data-aos="fade-up">Anda bisa memberikan hadiah digital atau lainya melalui website ini.</p>
         <div className='kartu-rekening'>
-    <Kartu/>
-    <Kartu/>
+    <Kartu />
+    <Kartu />
         </div>
-        <div className='konfirmasi'>
-          <h1 className='konfirm-hadiah'>Konfirmasi Hadiah</h1>
-        <p className='desc-konfirm'>Kami sangat berterima kasih kepada Bapak/Ibu/Saudara/i
+        <div className='konfirmasi' data-aos="fade-up">
+          <h1 className='konfirm-hadiah' data-aos="zoom-in" >Konfirmasi Hadiah</h1>
+        <p className='desc-konfirm' data-aos="zoom-in">Kami sangat berterima kasih kepada Bapak/Ibu/Saudara/i
         yang berkenan memberikan tanda kasih kepada kami.<br/> 
         Silakan melakukan konfirmasi pada kolom di bawah untuk mempermudah pendataan:</p>
-        <form onSubmit={handleFormSubmit}>
+        <form onSubmit={handleFormSubmit} data-aos="zoom-in">
         <div className="col mb-4">
         <label htmlFor="nama" className="form-label">
           Nama Pengirim <span>*</span>

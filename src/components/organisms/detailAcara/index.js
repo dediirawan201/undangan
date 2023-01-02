@@ -7,7 +7,7 @@ const DetailAcara = () => {
     <div className="detail-acara">
             <p className="judul" data-aos="fade-up">Detail Acara</p>
             <div className="acara">
-                <div className="acara-1">
+                <div className="acara-1" data-aos="fade-left">
                     <h1>Akad Nikah</h1>
                     <p>Minggu, 12 Januari 2022 <br/>
                     10:00 - 12:00 WIB <br/> 
@@ -23,7 +23,7 @@ const DetailAcara = () => {
                     </div>
                     <img src={Rose} width="100" height="100" alt='rose'/>
                 </div>
-                <div className="acara-1">
+                <div className="acara-1" data-aos="fade-right">
                     <h1>Resepsi Nikah</h1>
                     <p>Minggu, 12 Januari 2022 <br/> 
                     10:00 - 12:00 WIB <br/>

@@ -12,7 +12,7 @@ const ListUcapan = ({tamu}) => {
 
   }
   return (
-<div className="list-ucapan">
+<div className="list-ucapan" data-aos="zoom-in">
   <div className='wrapper-listUcapan'>
   <span className='nama'>{tamu.nama}</span>
   <span className='kehadiran'>{tamu.kehadiran}</span>  

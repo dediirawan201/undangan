@@ -14,7 +14,7 @@ const Ucapan = ({tamu,setTamu}) => {
       } 
   return (
     <div className='ucapan'> 
-      <div className='ucapan-wrapper'>
+      <div className='ucapan-wrapper' data-aos="zoom-in">
         <h1 className='mb-2 judul text-center'>Berikan Ucapan & Doa</h1>
         <TambahUcapan onTambahTamu={handleTambahTamu}/>
         <div className='container-listUcapan'>

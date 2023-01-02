@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './popupTamu.css';
 import ringer  from '../../../assets/audio/Ngoni.mp3';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const PopupTamu = ({play,audioRef}) => {
     const [open,setOpen] = useState('1');
@@ -26,6 +28,7 @@ const PopupTamu = ({play,audioRef}) => {
         setOpen('0')
         setTop('-110%')
         play()
+        AOS.init()
     }
 
   return (

@@ -76,7 +76,7 @@ const TambahUcapan = ({ onTambahTamu }) => {
   };
 
   return (
-    <form className="tambah-ucapan" onSubmit={handleFormSubmit}>
+    <form className="tambah-ucapan" onSubmit={handleFormSubmit} data-aos="fade-up">
       <div className="mb-4 col inputan">
         <label htmlFor="nama" className="form-label">
           Nama

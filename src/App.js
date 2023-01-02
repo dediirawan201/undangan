@@ -10,20 +10,11 @@ import DetailAcara from "./components/organisms/detailAcara";
 import Ucapan from "./components/organisms/ucapan";
 import Sound from "./components/atoms/audio/Sound";
 import Gift from "./components/organisms/gift";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 
 const App = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-      easing: 'ease',
-      anchorPlacement: 'top-bottom',
-      throttleDelay: 99,
-      offset: 120,
-    });
-},[])
+
   const [tamu, setTamu] = useState([]);
   const [isPlaying,setIsPlaying] = useState(false)
   useEffect(() => {

@@ -20,7 +20,7 @@ const Kartu = () => {
     },2000);
   }
   return (
-    <div className='kartu'>
+    <div className='kartu' data-aos="fade-up">
         <img src={Bca} width={60} height={20} alt='bca'/><br/>
         <p className='line'></p>
         <div className='wrapper-rek'>

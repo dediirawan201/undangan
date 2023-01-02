@@ -25,7 +25,7 @@ const Coutdown = () => {
     let d = Math.floor((gap % (menit)) / (detik));
 
   return (
-    <div className="coutdown">
+    <div className="coutdown" data-aos="flip-up" data-aos-duration="3000">
     <div id="hari">{h}</div>
     <div id="jam">{j}</div>
     <div id="menit">{m}</div>
