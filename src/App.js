@@ -19,6 +19,9 @@ const App = () => {
     AOS.init({
       duration: 500,
       easing: 'ease',
+      anchorPlacement: 'top-bottom',
+      throttleDelay: 99,
+      offset: 120,
     });
 },[])
   const [tamu, setTamu] = useState([]);

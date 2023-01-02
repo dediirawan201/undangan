@@ -185,6 +185,7 @@ rgba(0, 0, 0, 0.6)), url("../../../assets/gambar/gambar1.jpg");
 
 @media(max-width:480px){
     .hero{
+        height: 140vh;
         font-size: 16px;
         background-color: red;
         background-size: cover;

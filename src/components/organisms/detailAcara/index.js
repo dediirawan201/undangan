@@ -5,7 +5,7 @@ import './detailAcara.css'
 const DetailAcara = () => {
   return (
     <div className="detail-acara">
-            <p className="judul">Detail Acara</p>
+            <p className="judul" data-aos="fade-up">Detail Acara</p>
             <div className="acara">
                 <div className="acara-1">
                     <h1>Akad Nikah</h1>
