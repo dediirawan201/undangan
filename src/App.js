@@ -23,7 +23,7 @@ const App = () => {
 
 
   const getTamus = async () => {
-    const response = await axios.get("http://localhost:4000/user");
+    const response = await axios.get("http://undangan.pejuangquran.org/user");
     setTamu(response.data.data);
     console.log(response.data.data);
   };

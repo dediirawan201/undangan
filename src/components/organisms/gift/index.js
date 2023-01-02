@@ -59,7 +59,7 @@ const Gift = () => {
     }
 
     try {
-      await axios.post("http://localhost:4000/hadiah", formInput);
+      await axios.post("http://undangan.pejuangquran.org/hadiah", formInput);
     } catch (error) {
       console.log("error post ", error);
     }

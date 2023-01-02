@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './popupTamu.css';
-import ringer  from '../../../assets/audio/Ngoni.mp3';
+import albi  from '../../../assets/audio/albi.mp3';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -43,7 +43,7 @@ const PopupTamu = ({play,audioRef}) => {
                     <span>di Tempat</span>
                 </div>
                 <button className="button" type="button" onClick={klikUndangan}>Buka Undangan</button>
-                <audio src={ringer} ref={audioRef} loop autoPlay={true}></audio>
+                <audio src={albi} ref={audioRef} loop autoPlay={true}></audio>
         </div>
   )
 }

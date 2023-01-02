@@ -57,7 +57,7 @@ const TambahUcapan = ({ onTambahTamu }) => {
     }
 
     try {
-      await axios.post("http://localhost:4000/user", formInput);
+      await axios.post("http://undangan.pejuangquran.org/user", formInput);
     } catch (error) {
       console.log("error post ", error);
     }

@@ -1,12 +1,11 @@
-import { useState } from 'react';
-import ringer  from '../../../assets/audio/Ngoni.mp3';
+
+import albi  from '../../../assets/audio/albi.mp3';
 import Rose from '../../../assets/gambar/piringan.png'
 import './sound.css'
 const Sound = ({play,audioRef,isPlaying}) => {
-  // const [opacity,setOpacity] = useState('0')
     const clickPlay = () => {
       play()
-      // setOpacity('1')
+
     }
 
     return (
@@ -20,7 +19,7 @@ const Sound = ({play,audioRef,isPlaying}) => {
       <div onClick={clickPlay} className={isPlaying ? 'btn-stop' : 'btn-play'}></div>
     </div>
         </div>
-        <audio src={ringer} ref={audioRef} loop></audio>
+        <audio src={albi} ref={audioRef} loop></audio>
         </div>
       </div>
     );
