@@ -4,7 +4,7 @@
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-rgba(0, 0, 0, 0.6)), url("../../../assets/gambar/gambar1.jpg");
+rgba(0, 0, 0, 0.6)), url("../../../assets/gambar/wedding.jpg");
     background-size: cover;
     background-attachment: fixed;
     color: white;
@@ -187,8 +187,8 @@ rgba(0, 0, 0, 0.6)), url("../../../assets/gambar/gambar1.jpg");
     .hero{
         height: 800px;
         font-size: 16px;
-        background-color: red;
         background-size: cover;
+        background-position: -450px;
     }
 
     .hero .title{

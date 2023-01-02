@@ -23,8 +23,8 @@ const Hero = () => {
                 <div><img src={BungaKecil} alt='bunga'/></div>
             </div>
             <p className="title" data-aos="fade-up" data-aos-duration="3000">Kami yang berbahagia</p>
-            <h1 data-aos="zoom-in" data-aos-duration="3000" className="nama-pasangan">Dedi & Rifty</h1>
-            <p className="tanggal" data-aos="fade-down-left" data-aos-duration="3000">Minggu, 14 Februari 2023</p>
+            <h1 data-aos="zoom-in" data-aos-duration="3000" className="nama-pasangan">Sofia & Sigit</h1>
+            <p className="tanggal" data-aos="fade-down-left" data-aos-duration="3000">Minggu, 12 Februari 2023</p>
             <span className="desc" data-aos="fade-up-right" data-aos-duration="3000">- Save The Date -</span>
             <Coutdown/>
             <span className="inisial" data-aos="fade-up-left" data-aos-duration="3000">- D & R -</span>
