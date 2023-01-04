@@ -19,14 +19,17 @@ const App = () => {
   const [isPlaying,setIsPlaying] = useState(false)
   useEffect(() => {
     getTamus();
+    // getTamu()
   }, []);
 
 
   const getTamus = async () => {
-    const response = await axios.get("http://undangan.pejuangquran.org/user");
-    setTamu(response.data.data);
-    console.log(response.data.data);
+    const response = await axios.get("http://undangan.pejuangquran.org/user")
+    
+    setTamu(response.data.data.sort((a,b) => b.id-a.id));
+    // console.log(response.data.data.sort((a,b) => b.id-a.id));
   };
+
 
   const audioRef = useRef();
   const play = () => {
