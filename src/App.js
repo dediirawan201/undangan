@@ -20,7 +20,7 @@ const App = () => {
   useEffect(() => {
     getTamus();
     // getTamu()
-  }, [getTamus]);
+  }, [tamu]);
 
 
   const getTamus = async () => {
