@@ -27,6 +27,7 @@
     margin-bottom: 0;
 }
 
+
 .section-tanggal .desc-2{
     font-size: 40px;
     font-family: 'Rouge Script', cursive;
@@ -139,14 +140,13 @@
     .mempelai img{
         position:relative;
     }
-    /* .section-tanggal .mempelai .laki img{
-        display: flex;
-        border-radius: 100px;
+    .section-tanggal .desc .nama{
+        font-size: 33px;
+
     }
 
-    .section-tanggal .mempelai .pr img{
-        display: flex;
-        border-radius: 100px;
-    } */
+    .section-tanggal .desc .nama {
+        font-weight: bold;
+    }
 
 }

@@ -18,7 +18,7 @@ const TanggalPernikahan = () => {
                     <img src={Pria} width={200} height={200} alt='pria'/>
                     <div className="desc">
                     <p className="nama">Sigit Adianto, S.Si</p>
-                        <p>Putra dari Alm.Bapak Suparman & Ibu Sunarsih</p>
+                        <p className='orangtua'>Putra dari Alm.Bapak Suparman & Ibu Sunarsih</p>
                     </div>
                 </div>
                 <img src={Bunga} data-aos="fade-up" width={200} height={200} alt="bunga"/>
