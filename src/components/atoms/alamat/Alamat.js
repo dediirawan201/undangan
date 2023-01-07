@@ -8,7 +8,7 @@ export const Alamat = ({setModal,modal}) => {
     const [codeText,SetCodeText] = useState("copy");
     const [ikon,setIkon] = useState('content_copy');
     const [warna,setWarna] = useState('');
-    const alamat = 'Jl. Kemandoran Dalam satu bekasi selatan kota bekasi';
+    const alamat = 'Teluk Karang, Sedau, Singkawang Selatan, Kalimantan Barat';
     const copyCode = () =>{
         navigator.clipboard.writeText(alamat);
         SetCodeText("copied");
@@ -37,8 +37,8 @@ export const Alamat = ({setModal,modal}) => {
          <p className='nama-alamat'>Alamat Penerima</p>
          <p><strong>Sofie</strong> <br/> 089612232323</p>
          <p>{alamat}</p>
-         <div className='copy-alamat' >
-         <span onClick={copyCode} className={`copas material-symbols-outlined`} style={{color:warna}}>{ikon}</span>
+         <div className='copy-alamat' onClick={copyCode}>
+         <span  className={`copas material-symbols-outlined`} style={{color:warna}}>{ikon}</span>
          <span className='text'>{text}</span>
          </div>
          </div>
