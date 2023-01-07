@@ -54,7 +54,7 @@
     height: 200px;
     border: 2px solid white;
     border-radius: 100px;
-    background-image: url('../../../assets/gambar/pr.jpeg');
+    background-image: url('../../../assets/gambar/pria.jpeg');
     
     background-size:cover;
     background-repeat: no-repeat;
@@ -80,7 +80,7 @@
     height: 200px;
     border: 2px solid white;
     border-radius: 100px;
-    background-image: url('../../../assets/gambar/pria.jpeg');
+    background-image: url('../../../assets/gambar/pr.jpeg');
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -101,7 +101,7 @@
 
 @media(max-width:480px){
     .section-tanggal{
-        height: 1100px;
+        height: 1200px;
     }
     .title-tanggal{
         font-size: 30px;
@@ -126,31 +126,20 @@
     }
 
     .laki .foto-laki{
-        width: 0px;
-        height: 0px;
-        border-radius: 100px;
-        background-image: none;
-        background-size:none;
-        background-repeat: none;
-        background-attachment:none;
-        background-position: 34% 72%;
+        width: 200px;
+        height: 200px;
+
     }
 
     .pr .foto-pr{
-        width: 0px;
-        height: 0px;
-        border-radius: 100px;
-        background-image: none;
-        background-size:none;
-        background-repeat: none;
-        background-attachment:none;
-        background-position: 34% 72%;
+        width: 200px;
+        height: 200px;
     }
 
     .mempelai img{
         position:relative;
     }
-    .section-tanggal .mempelai .laki img{
+    /* .section-tanggal .mempelai .laki img{
         display: flex;
         border-radius: 100px;
     }
@@ -158,6 +147,6 @@
     .section-tanggal .mempelai .pr img{
         display: flex;
         border-radius: 100px;
-    }
+    } */
 
 }

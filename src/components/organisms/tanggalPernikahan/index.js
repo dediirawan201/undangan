@@ -17,8 +17,8 @@ const TanggalPernikahan = () => {
                     <div className="foto-laki"></div>
                     <img src={Pria} width={200} height={200} alt='pria'/>
                     <div className="desc">
-                        <p className="nama">Sofia, S.Pd</p>
-                        <p>Putri dari Bapak Pawari & Ibu Nurlaila</p>
+                    <p className="nama">Sigit Adianto, S.Si</p>
+                        <p>Putra dari Alm.Bapak Suparman & Ibu Sunarsih</p>
                     </div>
                 </div>
                 <img src={Bunga} data-aos="fade-up" width={200} height={200} alt="bunga"/>
@@ -26,8 +26,9 @@ const TanggalPernikahan = () => {
                     <div className="foto-pr"></div>
                     <img  src={Wanita} width={200} height={200} alt='wanita'/>
                     <div className="desc">
-                        <p className="nama">Sigit Adianto, S.Si</p>
-                        <p>Putra dari Alm.Bapak Suparman & Ibu Sunarsih</p>
+                    <p className="nama">Sofia, S.Pd</p>
+                        <p>Putri dari Bapak Pawari & Ibu Nurlaila</p>
+                        
                     </div>
                 </div>
             </div>
