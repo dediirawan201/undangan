@@ -1,5 +1,5 @@
 
-import albi  from '../../../assets/audio/albi.mp3';
+import Beautiful  from '../../../assets/audio/Beautiful-In-White-Shane-Filan-Lyrics_vYjeg2q2rhU.mp3';
 import Rose from '../../../assets/gambar/piringan.png'
 import './sound.css'
 const Sound = ({play,audioRef,isPlaying}) => {
@@ -19,7 +19,7 @@ const Sound = ({play,audioRef,isPlaying}) => {
       <div onClick={clickPlay} className={isPlaying ? 'btn-stop' : 'btn-play'}></div>
     </div>
         </div>
-        <audio src={albi} ref={audioRef} loop></audio>
+        <audio src={Beautiful} ref={audioRef} loop></audio>
         </div>
       </div>
     );
