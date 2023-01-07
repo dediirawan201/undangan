@@ -1,0 +1,91 @@
+body.active-modal {
+  overflow-y: hidden;
+}
+.rekening-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.55);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.wrapper-rekening{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.rekening {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 1px 1px 3px;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
+  margin-right: 30px;
+}
+
+.rekening .copy-rekening {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copy-rekening .text {
+  font-size: 13px;
+  font-family: "Noto Sans", sans-serif;
+}
+.copy-rekening .copas {
+  margin-right: 10px;
+}
+
+span.copas:hover {
+  color: blue;
+}
+
+.line {
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+
+.wrapper-rek {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.wrapper-rek .nama-rekening {
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+@media(max-width:412px){
+  .wrapper-rekening{
+    flex-direction: column;
+}
+.rekening{
+  margin-bottom: 10px;
+  width: 200px;
+  height: 230px;
+}
+button{
+  text-align: center;
+}
+
+}

@@ -1,44 +1,39 @@
+body.active-modal {
+    overflow-y: hidden;
+}
 .kartu{
-    width: 250px;
+    width: 100px;
+    position: relative;
+    height: 100px;
     padding: 10px;
-    border-radius: 20px;
-    background-color: rgb(244, 237, 237);
+    border-radius: 30px;
+    background-color: rgb(166, 206, 226);
     margin: 10px;
-}
-span.copas{
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-span.copas:hover{
-    color: blue;
-}
-
-.line{
-    border-bottom: 1px solid black;
-    margin-top: 10px;
-}
-
-.wrapper-rek{
+    color: white;
     display: flex;
-    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 5px 15px 5px;
+    
+}
+.active{
+    filter: blur(2px);
 }
 
-.nama-rekening{
-    font-size: 16px;
-    margin-top: 10px;
+
+.kartu:hover{
+    background-color: aquamarine;
+    transition: 1s;
+    color: rgb(93, 109, 109);
 }
 
-@media(max-width:480px){
-    .kartu{
-        width: 170px;
-        padding: 10px;
 
-    }
-}
+
+
 
 @media(max-width:370px){
     .kartu{
-        width: 70%;
+        width: 130px;
     }
 }

@@ -17,6 +17,8 @@ const App = () => {
 
   const [tamu, setTamu] = useState([]);
   const [isPlaying,setIsPlaying] = useState(false)
+  const [relatif,setRelatif] = useState('fix')
+  const [blurr,setBlurr] = useState('app')
   useEffect(() => {
     getTamus();
     // getTamu()
@@ -48,14 +50,14 @@ const App = () => {
   }
 
   return (
-    <div className="app">
+    <div className={relatif}>
       <Sound play={play} audioRef={audioRef} isPlaying={isPlaying}/>
       <Hero/>
       <TanggalPernikahan />
       <DetailAcara />
-      <Gift/>
+      <Gift blurr={setRelatif}/>
       <Ucapan tamu={tamu} setTamu={setTamu} />
-      <PopupTamu play={play} audioRef={audioRef} />
+      <PopupTamu play={play} audioRef={audioRef} setRelatif={setRelatif} />
     </div>
   );
 };

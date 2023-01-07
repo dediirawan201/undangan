@@ -25,7 +25,7 @@ const Hero = () => {
             <p className="title" data-aos="fade-up" data-aos-duration="3000">Kami yang berbahagia</p>
             <h1 data-aos="zoom-in" data-aos-duration="3000" className="nama-pasangan">Sofia & Sigit</h1>
             <p className="tanggal" data-aos="fade-down-left" data-aos-duration="3000">Minggu, 12 Februari 2023</p>
-            <span className="desc" data-aos="fade-up-right" data-aos-duration="3000">- Save The Date -</span>
+            <a  href='https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MzY4cTNmdDU2dmpsZXJ1aXZpOWdnOWQwdjcgZGVkaWlyd2Fuc3lhaDE5MjVAbQ&tmsrc=dediirwansyah1925%40gmail.com' terget="_blank" role="button" tabindex="-1" className="mb-3 btn btn-outline-light"  data-aos="fade-up-right" data-aos-duration="3000">- Save To Google Calendar -</a>
             <Coutdown/>
             <span className="inisial" data-aos="fade-up-left" data-aos-duration="3000">- D & R -</span>
             

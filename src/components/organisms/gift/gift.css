@@ -6,8 +6,12 @@
     background-image: linear-gradient(rgba(172, 166, 166, 0.4),
     rgba(202, 194, 194, 0.6)),url('../../../assets/gambar/flower-bg.png');
     background-attachment: fixed;
-    /* background-size: cover; */
     
+    
+}
+
+.active{
+    filter: blur(2px);
 }
 
 .gift-judul{
@@ -26,7 +30,9 @@
 
 .gift .kartu-rekening{
     display: flex;
+    width: 100%;
     margin-bottom: 20px;
+    justify-content:space-evenly;
 }
 
 .konfirmasi{

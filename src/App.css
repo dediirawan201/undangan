@@ -1,3 +1,8 @@
+.fix{
+    position: fixed;
+}
+
 .app{
     position: relative;
 }
+

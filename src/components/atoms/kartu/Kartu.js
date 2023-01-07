@@ -1,33 +1,41 @@
 import React, { useState } from 'react'
 import './kartu.css';
-import Bca from '../../../assets/gambar/bca.png'
 
-const Kartu = () => {
-    const rekening = 2434343434;
-    const [codeText,SetCodeText] = useState("copy");
-    const [ikon,setIkon] = useState('content_copy');
-    const [warna,setWarna] = useState('');
+import Wallet from '../../../assets/gambar/wallet.png'
+import Hadiah from '../../../assets/gambar/redeem_FILL0_wght400_GRAD0_opsz48.png';
+import { NomerRekening } from '../nomerRekening/NomerRekening';
+import { Alamat } from '../alamat/Alamat';
 
-  const copyCode = () =>{
-    navigator.clipboard.writeText(rekening);
-    SetCodeText("copied");
-    setIkon('done')
-    setWarna('rgb(0, 255, 140)')
-    setTimeout(()=>{
-        SetCodeText(codeText);
-        setIkon('content_copy') 
-        setWarna('')   
-    },2000);
-  }
+
+const Kartu = ({gambar,type,blurr}) => {
+    const [popup,setPopup] = useState('')
+    const [modal,setModal] = useState(false)
+    const [modalHadiah, setModalHadiah] = useState(false)
+
+    const dompet = () => {
+      if(type === 'rekening'){
+        setModal(!modal)
+          document.body.classList.add('active-modal')
+          
+      }
+      else if(type === 'hadiah'){
+        setModalHadiah(!modalHadiah)
+        document.body.classList.add('active-modal')
+      }
+      else{
+        return 
+      }
+    }
+
   return (
-    <div className='kartu' data-aos="fade-up">
-        <img src={Bca} width={60} height={20} alt='bca'/><br/>
-        <p className='line'></p>
-        <div className='wrapper-rek'>
-        <span onClick={copyCode} className={`copas material-symbols-outlined`} style={{color:warna}}>{ikon}</span>
-        <span>{rekening}</span>
-        </div>
-        <p className='nama-rekening'>Dedi Irawan</p>
+    <div>
+    <div className={`kartu ${popup}`} data-aos="fade-up" onClick={dompet}>
+      <img src={gambar === 'walet' ? Wallet : Hadiah} alt='wallet' width={50} height={50}/>
+    </div>
+    <div className={`container-dompet`}>
+    {modal && <NomerRekening modal={modal} setModal={setModal} nama='sofie' rekening={43434343}/>}
+    {modalHadiah && <Alamat modal={modalHadiah} setModal={setModalHadiah}/>}
+    </div>
     </div>
   )
 }

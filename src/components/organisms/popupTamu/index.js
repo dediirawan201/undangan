@@ -4,7 +4,7 @@ import albi  from '../../../assets/audio/albi.mp3';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const PopupTamu = ({play,audioRef}) => {
+const PopupTamu = ({play,audioRef,setRelatif}) => {
     const [open,setOpen] = useState('1');
     const [top,setTop] = useState('-1%')
     function GetURLParameter(sParam)
@@ -28,7 +28,13 @@ const PopupTamu = ({play,audioRef}) => {
         setOpen('0')
         setTop('-110%')
         play()
-        AOS.init()
+        AOS.init({
+            // offset: 200,
+            duration: 2000,
+            easing: 'ease',
+            // delay: 100,
+          });
+        setRelatif('app')
     }
 
   return (

@@ -14,14 +14,16 @@ const DetailAcara = () => {
                     <strong>Kediaman Keluarga Wanita</strong><br/>
                     Jalan alamat nikahan</p>
                     <div className="map-live">
-                        <button className="btn" type="button"><span>Buka Map</span> <span className="material-symbols-outlined">
+                    <a  href='https://www.google.com/maps/place/Sedau/@0.867808,108.9316602,17z/data=!3m1!4b1!4m5!3m4!1s0x31e373aa88220993:0x4d292b32ec09f420!8m2!3d0.8678026!4d108.9338489' terget="_blank" role="button" tabindex="-1" className="btn">
+            <span>Buka Map</span> <span className="material-symbols-outlined">
                             location_on
-                             </span></button>
-                        <button className="btn" type="button"><span>Live</span> <span className="material-symbols-outlined">
+                             </span></a>
+                             <a  href='https://www.google.com/maps/place/Sedau/@0.867808,108.9316602,17z/data=!3m1!4b1!4m5!3m4!1s0x31e373aa88220993:0x4d292b32ec09f420!8m2!3d0.8678026!4d108.9338489' terget="_blank" role="button" tabindex="-1" className="btn">
+                            <span>Live</span> <span className="material-symbols-outlined">
                             join_right
-                            </span></button>
+                            </span></a>
                     </div>
-                    <img src={Rose} width="100" height="100" alt='rose'/>
+                    
                 </div>
                 <div className="acara-1" data-aos="fade-right">
                     <h1>Resepsi Nikah</h1>
@@ -30,14 +32,16 @@ const DetailAcara = () => {
                     <strong>Kediaman Keluarga Wanita</strong><br/>
                     Jalan alamat nikahan</p>
                     <div className="map-live">
-                        <button className="btn" type="button"><span>Buka Map</span> <span className="material-symbols-outlined">
+                    <a  href='https://www.google.com/maps/place/Sedau/@0.867808,108.9316602,17z/data=!3m1!4b1!4m5!3m4!1s0x31e373aa88220993:0x4d292b32ec09f420!8m2!3d0.8678026!4d108.9338489' terget="_blank" role="button" tabindex="-1" className="btn">
+            <span>Buka Map</span> <span className="material-symbols-outlined">
                             location_on
-                            </span></button>
-                        <button className="btn" type="button"><span>Live</span> <span className="material-symbols-outlined">
+                             </span></a>
+                             <a  href='https://www.google.com/maps/place/Sedau/@0.867808,108.9316602,17z/data=!3m1!4b1!4m5!3m4!1s0x31e373aa88220993:0x4d292b32ec09f420!8m2!3d0.8678026!4d108.9338489' terget="_blank" role="button" tabindex="-1" className="btn">
+                            <span>Live</span> <span className="material-symbols-outlined">
                             join_right
-                            </span></button>
+                            </span></a>
                     </div>
-                    <img src={Rose} width="100" height="100" alt='rose'/>
+                   
                 </div>
             </div>
         </div>

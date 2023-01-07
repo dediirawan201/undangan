@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #cdae8f;
+    background-color: #b98fa9;
 }
 
 .title-tanggal{
@@ -24,6 +24,7 @@
     font-family: 'Rouge Script', cursive;
     font-size: 36px;
     margin-bottom: -20px;
+    margin-bottom: 0;
 }
 
 .section-tanggal .desc-2{
@@ -38,9 +39,7 @@
     position: relative;
 }
 
-.mempelai img{
-    position: absolute;
-}
+
 
 .laki{
     width: 300px;
@@ -53,13 +52,14 @@
 .laki .foto-laki{
     width: 200px;
     height: 200px;
-    /* border: 1px solid black; */
+    border: 2px solid white;
     border-radius: 100px;
-    background-image: url('../../../assets/gambar/pria.jpg');
-    background-size:220px 220px;
+    background-image: url('../../../assets/gambar/pr.jpeg');
+    
+    background-size:cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
-    background-position: 34% 72%;
+    background-position: 80% 42%;
 
 }
 
@@ -78,13 +78,13 @@
 .pr .foto-pr{
     width: 200px;
     height: 200px;
-    /* border: 1px solid black; */
+    border: 2px solid white;
     border-radius: 100px;
-    background-image: url('../../../assets/gambar/pr.jpg');
-    background-size:220px 220px;
+    background-image: url('../../../assets/gambar/pria.jpeg');
+    background-size:cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
-    background-position: 65% 72%;
+    background-position: 80% 42%;
 }
 
 .pr .desc{

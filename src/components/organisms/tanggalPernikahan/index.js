@@ -1,5 +1,6 @@
 import React from 'react'
-import { Bunga, Pria, Wanita } from '../../../assets/gambar';
+import { Bunga,Pria,Wanita} from '../../../assets/gambar';
+
 import './tanggalPernikahan.css';
 
 
@@ -12,21 +13,21 @@ const TanggalPernikahan = () => {
                 Ya Allah, perkenankanlah kami merangkai kasih sayang yang Kau ciptakan di antara putra-putri kami:</p>
                 <p className="desc-2" data-aos="zoom-in">Pasangan Mempelai</p>
             <div className="mempelai"> 
-                <div className="laki" data-aos="fade-left">
+                <div className="laki" data-aos="fade-up">
                     <div className="foto-laki"></div>
                     <img src={Pria} width={200} height={200} alt='pria'/>
                     <div className="desc">
-                        <p className="nama">Dedi Irawan</p>
-                        <p>Putra dari Bapak Indu & Ibu Mariah</p>
+                        <p className="nama">Sofia, S.Pd</p>
+                        <p>Putri dari Bapak Pawari & Ibu Nurlaila</p>
                     </div>
                 </div>
                 <img src={Bunga} data-aos="fade-up" width={200} height={200} alt="bunga"/>
-                <div className="pr" data-aos="fade-right">
+                <div className="pr" data-aos="fade-up">
                     <div className="foto-pr"></div>
-                    <img   src={Wanita} width={200} height={200} alt='wanita'/>
+                    <img  src={Wanita} width={200} height={200} alt='wanita'/>
                     <div className="desc">
-                        <p className="nama">Dedi Irawan</p>
-                        <p>Putra dari Bapak Indu & Ibu Mariah</p>
+                        <p className="nama">Sigit Adianto, S.Si</p>
+                        <p>Putra dari Alm.Bapak Suparman & Ibu Sunarsih</p>
                     </div>
                 </div>
             </div>
