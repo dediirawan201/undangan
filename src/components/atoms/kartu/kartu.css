@@ -17,9 +17,9 @@ body.active-modal {
     box-shadow: 2px 5px 15px 5px;
     
 }
-.active{
+/* .active{
     filter: blur(2px);
-}
+} */
 
 
 .kartu:hover{

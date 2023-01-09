@@ -4,11 +4,11 @@ import { Bunga,Pria,Wanita} from '../../../assets/gambar';
 import './tanggalPernikahan.css';
 
 
-const TanggalPernikahan = () => {
+const TanggalPernikahan = ({id}) => {
     
   return (  
-    <div className="section-tanggal">
-            <span className="title-tanggal" data-aos="fade-up">بسم الله الرحمن الرحيم</span>
+    <div className="section-tanggal" id={`content${id}`}>
+            <span className="title-tanggal" data-aos="fade-up"> بسم الله الرحمن الرحيم</span>
             <p className="desc" data-aos="fade-up">Maha suci Allah SWT yang telah menciptakan makhluk-Nya berpasang-pasangan.
                 Ya Allah, perkenankanlah kami merangkai kasih sayang yang Kau ciptakan di antara putra-putri kami:</p>
                 <p className="desc-2" data-aos="zoom-in">Pasangan Mempelai</p>

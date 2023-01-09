@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Kartu from '../../atoms/kartu/Kartu';
 import './gift.css';
 
-const Gift = ({blurr}) => {
+const Gift = ({blurr,id}) => {
   const [formInput, setFormInput] = useState({
     nama: "",
     hadiah: "",
@@ -80,8 +80,8 @@ const Gift = ({blurr}) => {
     });
   };
   return (
-    <div className={`gift ${blurr}`}>
-        <p className='gift-judul' data-aos="zoom-in">Berikan Hadiah</p>
+    <div className={`gift ${blurr}`} id={`content${id}`}>
+        <p className='gift-judul' data-aos="zoom-in"> Berikan Hadiah</p>
         <p className='desc' data-aos="fade-up">Bagi keluarga dan sahabat yang ingin mengirimkan hadiah, <br/> silakan mengirimkannya melalui tautan berikut:</p>
         <div className='kartu-rekening'>
     <Kartu gambar='walet' type='rekening' blurr={blurr}/>
@@ -144,8 +144,8 @@ const Gift = ({blurr}) => {
         </label>
       <select name='tujuan'  onChange={handleInputChange} className="form-select" aria-label="Default select example">
   <option selected>Pilih Nomer rekening atau alamat yang dipilih</option>
-  <option value='BSI 23244343 RiftyShafitri'>BSI 23244343 RiftyShafitri</option>
-  <option value='Mandiri 23232323 Dedi Irawan'>Mandiri 23232323 Dedi Irawan</option>
+  <option value='BSI 7042747108 Sofia'>BSI 7042747108 Sofia</option>
+  <option value='Mandiri 1310013678422 Sigit Adianto'>Mandiri 1310013678422 Sigit Adianto</option>
   <option value='Teluk Karang, Sedau, Singkawang Selatan, Kalimantan Barat'>Teluk Karang, Sedau, Singkawang Selatan, Kalimantan Barat</option>
 </select>
 {errors.tujuan && <small>{errors.tujuan}</small>}

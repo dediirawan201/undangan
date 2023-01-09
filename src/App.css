@@ -2,7 +2,9 @@
     position: fixed;
 }
 
+
 .app{
     position: relative;
+    overflow: hidden;
 }
 

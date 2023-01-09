@@ -3,11 +3,11 @@ import {BungaKecil, Frame2} from '../../../assets/gambar'
 import Coutdown from '../../molecules/coutdown/Coutdown';
 import './hero.css';
 
-const Hero = () => {
+const Hero = ({id}) => {
     
   return (
-        <div  className="hero" data-aos="fade-bottom" data-aos-duration="2000">
-                <img data-aos="fade-right" data-aos-duration="3000"  src={Frame2} height="600" width="600" alt='hero'/>
+        <div  className="hero" data-aos="fade-bottom" data-aos-duration="2000" id={`content${id}`} > 
+                <img  data-aos="fade-right" data-aos-duration="3000"  src={Frame2} height="600" width="600" alt='hero'/>
             <div className="set">
                 <div><img src={BungaKecil} alt='bunga'/></div>
                 <div><img src={BungaKecil} alt='bunga'/></div>

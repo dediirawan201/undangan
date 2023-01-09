@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
-import RowMahasiswa from "./components/molecules/listUcapan/ListUcapan";
-import RowTambahMahasiswa from "./components/molecules/tambahUcapan/TambahUcapan";
 import axios from "axios";
 import Hero from "./components/organisms/hero/Hero";
 import PopupTamu from "./components/organisms/popupTamu";
@@ -10,6 +8,7 @@ import DetailAcara from "./components/organisms/detailAcara";
 import Ucapan from "./components/organisms/ucapan";
 import Sound from "./components/atoms/audio/Sound";
 import Gift from "./components/organisms/gift";
+import Navbar from "./components/atoms/navbar/Navbar";
 
 
 
@@ -18,7 +17,7 @@ const App = () => {
   const [tamu, setTamu] = useState([]);
   const [isPlaying,setIsPlaying] = useState(false)
   const [relatif,setRelatif] = useState('fix')
-  const [blurr,setBlurr] = useState('app')
+  // const [scrool,setScrool] = useState()
   useEffect(() => {
     getTamus();
     // getTamu()
@@ -49,15 +48,21 @@ const App = () => {
     }
   }
 
+  const onContentIndexClick = (value) => {
+    const element = document.getElementById(`content${value}`)
+    element.scrollIntoView({behavior:'smooth'})
+  }
+
   return (
     <div className={relatif}>
-      <Sound play={play} audioRef={audioRef} isPlaying={isPlaying}/>
-      <Hero/>
-      <TanggalPernikahan />
-      <DetailAcara />
-      <Gift blurr={setRelatif}/>
-      <Ucapan tamu={tamu} setTamu={setTamu} />
+      {/* <Sound play={play} audioRef={audioRef} isPlaying={isPlaying}/> */}
+      <Hero id={1}/>
+      <TanggalPernikahan id={2}  />
+      <DetailAcara id={3} />
+      <Gift blurr={setRelatif} id={4}/>
+      <Ucapan tamu={tamu} setTamu={setTamu} id={5}/>
       <PopupTamu play={play} audioRef={audioRef} setRelatif={setRelatif} />
+      <Navbar scrool={onContentIndexClick}/>
     </div>
   );
 };

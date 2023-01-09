@@ -2,9 +2,9 @@ import React from 'react'
 import { Rose } from '../../../assets/gambar';
 import './detailAcara.css'
 
-const DetailAcara = () => {
+const DetailAcara = ({id}) => {
   return (
-    <div className="detail-acara">
+    <div className="detail-acara" id={`content${id}`}>
             <p className="judul" data-aos="fade-up">Detail Acara</p>
             <div className="acara">
                 <div className="acara-1" data-aos="fade-left">
