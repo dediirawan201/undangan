@@ -1,13 +1,14 @@
 /* detail acara  */
 .detail-acara{
     height: 120vh;
-    color: white;
+    color: #d6bb9f;
     display: flex;
     justify-content:flex-start;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(rgba(118, 117, 117, 0.2),
-    rgba(188, 184, 184, 0.3)),url('../../../assets/gambar/bg-bunga.jpg');
+    background-color: white;
+    /* background-image: linear-gradient(rgba(118, 117, 117, 0.2),
+    rgba(188, 184, 184, 0.3)),url('../../../assets/gambar/bg-bunga.jpg'); */
     background-attachment: fixed;
     height: 100vh;
 }
@@ -67,6 +68,11 @@
     width: 150px;
     margin-right: 5px;
     box-shadow: 5px 10px 20px;
+}
+
+.map-live .btn{
+    background-color: #d6bb9f;
+    color: white;
 }
 
 

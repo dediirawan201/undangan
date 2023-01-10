@@ -3,8 +3,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(rgba(172, 166, 166, 0.4),
-    rgba(202, 194, 194, 0.6)),url('../../../assets/gambar/flower-bg.png');
+    background-color: #d6bb9f;
+    color: white;
+    /* background-image: linear-gradient(rgba(172, 166, 166, 0.4),
+    rgba(202, 194, 194, 0.6)),url('../../../assets/gambar/flower-bg.png'); */
     background-attachment: fixed;
     
     

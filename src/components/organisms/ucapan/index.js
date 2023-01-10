@@ -13,7 +13,7 @@ const Ucapan = ({tamu,setTamu,id}) => {
         setTamu(newTamu) 
       } 
   return (
-    <div className='ucapan' id={`content${id}`}>
+    <section className='ucapan' id={`content${id}`}>
       <div className='ucapan-wrapper' data-aos="zoom-in">
         <h1 className='mb-2 judul text-center'>Berikan Ucapan & Doa</h1>
         <TambahUcapan onTambahTamu={handleTambahTamu}/>
@@ -25,7 +25,7 @@ const Ucapan = ({tamu,setTamu,id}) => {
               })}
               </div>
       </div>
-    </div>
+    </section>
   )
 }
 

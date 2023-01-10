@@ -50,12 +50,33 @@ const App = () => {
 
   const onContentIndexClick = (value) => {
     const element = document.getElementById(`content${value}`)
+    const sec = document.querySelectorAll('section')
+    console.log(sec)
+    const nav = document.querySelectorAll('div ul li')
     element.scrollIntoView({behavior:'smooth'})
+    window.onscroll = () => {
+      element.foreach(values => {
+         let top = window.scrollY;
+         let offset = values.offsetTop;
+         let height = values.offsetHeight;
+        //  let id = element.getAttribute('id')
+
+         if(top >= offset && top < offset + height){
+            nav.foreach(navs => {
+              navs.classList.add('active')
+            })
+         }
+       })
+     }
   }
+
+  const angka = [1,2,3,4,5]
+  // console.log(angka[0])
+  
 
   return (
     <div className={relatif}>
-      {/* <Sound play={play} audioRef={audioRef} isPlaying={isPlaying}/> */}
+      <Sound play={play} audioRef={audioRef} isPlaying={isPlaying}/>
       <Hero id={1}/>
       <TanggalPernikahan id={2}  />
       <DetailAcara id={3} />

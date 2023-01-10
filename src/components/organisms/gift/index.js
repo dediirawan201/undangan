@@ -80,7 +80,7 @@ const Gift = ({blurr,id}) => {
     });
   };
   return (
-    <div className={`gift ${blurr}`} id={`content${id}`}>
+    <section className={`gift ${blurr}`} id={`content${id}`}>
         <p className='gift-judul' data-aos="zoom-in"> Berikan Hadiah</p>
         <p className='desc' data-aos="fade-up">Bagi keluarga dan sahabat yang ingin mengirimkan hadiah, <br/> silakan mengirimkannya melalui tautan berikut:</p>
         <div className='kartu-rekening'>
@@ -185,7 +185,7 @@ const Gift = ({blurr,id}) => {
       </div>
         </form>
         </div>
-    </div>
+    </section>
   )
 }
 

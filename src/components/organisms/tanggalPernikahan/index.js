@@ -7,7 +7,7 @@ import './tanggalPernikahan.css';
 const TanggalPernikahan = ({id}) => {
     
   return (  
-    <div className="section-tanggal" id={`content${id}`}>
+    <section className="section-tanggal" id={`content${id}`}>
             <span className="title-tanggal" data-aos="fade-up"> بسم الله الرحمن الرحيم</span>
             <p className="desc" data-aos="fade-up">Maha suci Allah SWT yang telah menciptakan makhluk-Nya berpasang-pasangan.
                 Ya Allah, perkenankanlah kami merangkai kasih sayang yang Kau ciptakan di antara putra-putri kami:</p>
@@ -32,7 +32,7 @@ const TanggalPernikahan = ({id}) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
   )
 }
 

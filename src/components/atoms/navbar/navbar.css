@@ -20,7 +20,7 @@
     z-index: 998;
   /* width: 88%; */
   height: 70px;
-  background: rgb(255, 255, 255);
+  /* background: rgb(205, 61, 61); */
   display: none;
   justify-content: center;
   align-items: center;
@@ -32,6 +32,7 @@
 
 .navigation{
     display: flex ;
+    /* padding: 10px; */
     position: fixed;
     bottom: 0;
     background-color: white;
@@ -57,31 +58,46 @@
   align-items: center;
   cursor: pointer;
   z-index: 1;
+  bottom: 10px;
+}
+
+.navigation ul li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clrAct);
 }
 
 .navigation ul li .icon{
   position: relative;
   display: block;
+  bottom: -6px;
   line-height: 80px;
   color: var(--clr);
   transition: 0.5s;
+  
 }
 
 .navigation ul li.active .icon{
-  transform: translateY(-38px);
-  color: white;
+  transform: translateY(-43px);
+  color: var(--clr);
+  /* margin-bottom: 10px; */
+  
   
 }
 
 .navigation ul li .name{
   position: absolute;
+  bottom: 40px;
   transition: 0.3s;
   transform:translateY(50px);
-  opacity: 0;
+  opacity: 1;
   font-size: 0.95em;
+  
 }
 
 .navigation ul li.active .name{
+  /* bottom: 30px; */
   transform: translateY(30px);
   opacity: 1;
   color: var(--clrAct);
@@ -89,11 +105,11 @@
 
 .menu-bg{
   position: absolute;
-  top: -30px;
-  background: var(--clrbg);
+  top: -40px;
+  background: white;
   width: 70px;
   height: 70px;
-  border:7px solid rgb(250, 243, 243);
+  border:7px solid var(--clrAct);
   border-radius: 100%;
   transition: 0.5s;
 }

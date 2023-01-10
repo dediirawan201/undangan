@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import {
-  BsFillBagCheckFill,
+  BsFillSuitHeartFill,
   BsFillHouseFill,
-  BsFillChatSquareFill,
-  BsClockFill,
-  BsGearFill,
+  BsCalendar2WeekFill,
+  BsGiftFill,
+  BsChatSquareTextFill
 } from "react-icons/bs";
 import "./navbar.css";
 
@@ -19,26 +19,27 @@ const Navbar = ({scrool}) => {
     },
     {
       id:2,
-      icon: <BsFillBagCheckFill size={25} />,
-      name: "Orders",
+      icon: <BsFillSuitHeartFill size={25} />,
+      name: "Mempelai",
     },
     {
       id:3,
-      icon: <BsFillChatSquareFill size={25} />,
-      name: "Chat",
+      icon: <BsCalendar2WeekFill size={25} />,
+      name: "Acara",
     },
     {
       id:4,
-      icon: <BsClockFill size={25} />,
-      name: "History",
+      icon: <BsGiftFill size={25} />,
+      name: "Gift",
     },
     {
       id:5,
-      icon: <BsGearFill size={25} />,
-      name: "Settings",
+      icon: <BsChatSquareTextFill size={25} />,
+      name: "Ucapan",
     },
   ];
 
+  
   return (
     <div className="navigation">
       <ul>
@@ -49,7 +50,7 @@ const Navbar = ({scrool}) => {
               key={index}
               className={index === selected ? "active" : ""}
             >
-            <a onClick={() => scrool(val.id)}>
+            <a className="tabIcon" onClick={() => scrool(val.id)}>
               <div className="icon">{val.icon}</div>
               <div className="name">{val.name}</div>
               </a>

@@ -7,8 +7,9 @@
     align-items: center;
     /* margin-top: 5px; */
     height: 1000px;
-    background-image: linear-gradient(rgba(46, 44, 44, 0.4),
-    rgba(109, 106, 106, 0.6)),url('../../../assets/gambar/bunga-rose.jpg');
+    /* background-image: linear-gradient(rgba(46, 44, 44, 0.4),
+    rgba(109, 106, 106, 0.6)),url('../../../assets/gambar/bunga-rose.jpg'); */
+    background-color: white;
     background-size: contain;
     background-attachment:fixed;
     background-size: cover;
@@ -20,7 +21,7 @@
     color: white;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgb(214, 94, 170);
+    background-color: #d6bb9f;
 }
 
 .judul{
