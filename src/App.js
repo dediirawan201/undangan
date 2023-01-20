@@ -17,6 +17,8 @@ const App = () => {
   const [tamu, setTamu] = useState([]);
   const [isPlaying,setIsPlaying] = useState(false)
   const [relatif,setRelatif] = useState('fix')
+  const active = 0;
+
   // const [scrool,setScrool] = useState()
   useEffect(() => {
     getTamus();
@@ -50,40 +52,55 @@ const App = () => {
 
   const onContentIndexClick = (value) => {
     const element = document.getElementById(`content${value}`)
-    const sec = document.querySelectorAll('section')
-    console.log(sec)
-    const nav = document.querySelectorAll('div ul li')
     element.scrollIntoView({behavior:'smooth'})
-    window.onscroll = () => {
-      element.foreach(values => {
-         let top = window.scrollY;
-         let offset = values.offsetTop;
-         let height = values.offsetHeight;
-        //  let id = element.getAttribute('id')
+     }
 
+
+     const element = document.querySelectorAll('section')
+    const nav = document.querySelectorAll('.navigation ul li') 
+     window.onscroll = () => {
+      element.forEach(values => {
+         let top = window.scrollY;
+         let offset = values.offsetTop - 150;
+         let height = values.offsetHeight;
+         let id = values.getAttribute('id')
+  
          if(top >= offset && top < offset + height){
-            nav.foreach(navs => {
-              navs.classList.add('active')
+            nav.forEach(navs => {
+              navs.classList.add('active');
+              // document.querySelector('.navigation ul li a[href*=' + id + ']').classList.add('active')
+              
             })
          }
        })
-     }
-  }
+      }
+    
+  // document.querySelectorAll('section').onscroll = function() {myFunction()}
 
-  const angka = [1,2,3,4,5]
-  // console.log(angka[0])
+  // function myFunction() {
+  //   let top = window.scrollY;
+  //   let offset = document.querySelectorAll('section').offsetTop;
+  //   let height = document.querySelectorAll('section').offsetHeight;
+
+  //   if(top >= offset && top < offset + height){
+  //     document.body.classList.add('active')
+  //   }
+  //   // document.getElementById("demo").innerHTML = "You scrolled in div.";
+  // }
+
+
   
 
   return (
     <div className={relatif}>
-      <Sound play={play} audioRef={audioRef} isPlaying={isPlaying}/>
+      {/* <Sound play={play} audioRef={audioRef} isPlaying={isPlaying}/> */}
       <Hero id={1}/>
       <TanggalPernikahan id={2}  />
       <DetailAcara id={3} />
       <Gift blurr={setRelatif} id={4}/>
       <Ucapan tamu={tamu} setTamu={setTamu} id={5}/>
       <PopupTamu play={play} audioRef={audioRef} setRelatif={setRelatif} />
-      <Navbar scrool={onContentIndexClick}/>
+      <Navbar scrool={onContentIndexClick} />
     </div>
   );
 };

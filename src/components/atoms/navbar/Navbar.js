@@ -8,9 +8,9 @@ import {
 } from "react-icons/bs";
 import "./navbar.css";
 
-const Navbar = ({scrool}) => {
+const Navbar = ({scrool,active}) => {
   const [selected, setSelected] = useState(0);
-
+  // console.log(active(selected))
   const menus = [
     {
       id:1,
@@ -39,6 +39,7 @@ const Navbar = ({scrool}) => {
     },
   ];
 
+    
   
   return (
     <div className="navigation">
@@ -46,13 +47,14 @@ const Navbar = ({scrool}) => {
         {menus.map((val, index) => {
           return (
             <li
-              onClick={() => setSelected(index)}
-              key={index}
-              className={index === selected ? "active" : ""}
+            onClick={() => setSelected(index)}
+            key={index}
+            className={index === selected ? 'active' : ""}
             >
-            <a className="tabIcon" onClick={() => scrool(val.id)}>
+            <a className="tabIcon"  onClick={() => scrool(val.id)}>
               <div className="icon">{val.icon}</div>
               <div className="name">{val.name}</div>
+              {/* {scroolOn(val.id)} */}
               </a>
             </li>
           );
