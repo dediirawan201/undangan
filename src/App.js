@@ -93,7 +93,7 @@ const App = () => {
 
   return (
     <div className={relatif}>
-      {/* <Sound play={play} audioRef={audioRef} isPlaying={isPlaying}/> */}
+      <Sound play={play} audioRef={audioRef} isPlaying={isPlaying}/>
       <Hero id={1}/>
       <TanggalPernikahan id={2}  />
       <DetailAcara id={3} />
@@ -102,7 +102,7 @@ const App = () => {
       <PopupTamu play={play} audioRef={audioRef} setRelatif={setRelatif} />
       <Navbar scrool={onContentIndexClick} />
     </div>
-  );
+  ); 
 };
 
 export default App;

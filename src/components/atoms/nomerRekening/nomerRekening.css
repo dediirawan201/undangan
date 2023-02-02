@@ -30,6 +30,7 @@ body.active-modal {
   width: 250px;
   height: 250px;
   margin-right: 30px;
+  color: black;
 }
 
 .rekening .copy-rekening {

@@ -19,7 +19,7 @@ const Sound = ({play,audioRef,isPlaying}) => {
       <div onClick={clickPlay} className={isPlaying ? 'btn-stop' : 'btn-play'}></div>
     </div>
         </div>
-        <audio src={Beautiful} ref={audioRef} loop></audio>
+        {/* <audio src={Beautiful} ref={audioRef} loop></audio> */}
         </div>
       </div>
     );
