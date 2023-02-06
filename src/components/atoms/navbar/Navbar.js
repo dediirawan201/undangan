@@ -7,7 +7,7 @@ import {
   BsChatSquareTextFill
 } from "react-icons/bs";
 import "./navbar.css";
-
+ 
 const Navbar = ({scrool,active}) => {
   const [selected, setSelected] = useState(0);
   // console.log(active(selected))

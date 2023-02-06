@@ -100,7 +100,7 @@ const App = () => {
       <Gift blurr={setRelatif} id={4}/>
       <Ucapan tamu={tamu} setTamu={setTamu} id={5}/>
       <PopupTamu play={play} audioRef={audioRef} setRelatif={setRelatif} />
-      <Navbar scrool={onContentIndexClick} />
+      {/* <Navbar scrool={onContentIndexClick} /> */}
     </div>
   ); 
 };

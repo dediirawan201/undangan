@@ -1,8 +1,9 @@
 
 .thumb{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-rgba(0, 0, 0, 0.6)), url("../../../assets/gambar/wedding.jpg");
-background-size: cover;
+rgba(0, 0, 0, 0.6)), url("../../../assets/gambar/w1.jpeg");
+background-size: contain;
+
 width: 100%;
     min-height: 100%;
     /* position: relative; */
@@ -79,8 +80,8 @@ width: 100%;
 @media(max-width:480px){
     .thumb{
         height: 100vh;
-        background-position: -450px;
-        
+        background-position:  -60px;
+        background-size: cover;
     }
     .thumb .pengantin{
         font-size: 50px;
