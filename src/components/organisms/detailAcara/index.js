@@ -9,8 +9,8 @@ const DetailAcara = ({id}) => {
             <div className="acara">
                 <div className="acara-1" data-aos="fade-left">
                     <h1>Akad Nikah</h1>
-                    <p>Minggu, 12 Januari 2022 <br/>
-                    08:00 - 10:00 WIB <br/> 
+                    <p>Minggu, 12 Februari 2023 <br/>
+                    09:00 - 10:00 WIB <br/> 
                     <strong>Kediaman Keluarga Wanita</strong><br/>
                     Teluk Karang, Sedau, Singkawang Selatan, Kalimantan Barat</p>
                     <div className="map-live">
@@ -27,7 +27,7 @@ const DetailAcara = ({id}) => {
                 </div>
                 <div className="acara-1" data-aos="fade-right">
                     <h1>Resepsi Nikah</h1>
-                    <p>Minggu, 12 Januari 2022 <br/> 
+                    <p>Minggu, 12 Februari 2023 <br/> 
                     10:00 WIB - Selesai <br/>
                     <strong>Kediaman Keluarga Wanita</strong><br/>
                     Teluk Karang, Sedau, Singkawang Selatan, Kalimantan Barat</p>

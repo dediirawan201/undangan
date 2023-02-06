@@ -54,7 +54,6 @@ const Navbar = ({scrool,active}) => {
             <a className="tabIcon"  onClick={() => scrool(val.id)}>
               <div className="icon">{val.icon}</div>
               <div className="name">{val.name}</div>
-              {/* {scroolOn(val.id)} */}
               </a>
             </li>
           );

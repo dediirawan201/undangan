@@ -102,7 +102,7 @@ const Gift = ({blurr,id}) => {
           type="text"
           className="form-control"
           name="nama"
-          placeholder="Nama Lengkap"
+          placeholder="...."
           onChange={handleInputChange}
           value={formInput.nama}
         />
@@ -143,7 +143,7 @@ const Gift = ({blurr,id}) => {
           Tujuan <span>*</span>
         </label>
       <select name='tujuan'  onChange={handleInputChange} className="form-select" aria-label="Default select example">
-  <option selected>Pilih Nomer rekening atau alamat yang dipilih</option>
+  <option selected>...</option>
   <option value='BSI 7042747108 Sofia'>BSI 7042747108 Sofia</option>
   <option value='Mandiri 1310013678422 Sigit Adianto'>Mandiri 1310013678422 Sigit Adianto</option>
   <option value='Teluk Karang, Sedau, Singkawang Selatan, Kalimantan Barat'>Teluk Karang, Sedau, Singkawang Selatan, Kalimantan Barat</option>

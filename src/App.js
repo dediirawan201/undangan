@@ -17,7 +17,7 @@ const App = () => {
   const [tamu, setTamu] = useState([]);
   const [isPlaying,setIsPlaying] = useState(false)
   const [relatif,setRelatif] = useState('fix')
-  const active = 0;
+  // const active = 0;
 
   // const [scrool,setScrool] = useState()
   useEffect(() => {
@@ -52,41 +52,8 @@ const App = () => {
 
   const onContentIndexClick = (value) => {
     const element = document.getElementById(`content${value}`)
-    element.scrollIntoView({behavior:'smooth'})
-     }
-
-
-     const element = document.querySelectorAll('section')
-    const nav = document.querySelectorAll('.navigation ul li') 
-     window.onscroll = () => {
-      element.forEach(values => {
-         let top = window.scrollY;
-         let offset = values.offsetTop - 150;
-         let height = values.offsetHeight;
-         let id = values.getAttribute('id')
-  
-         if(top >= offset && top < offset + height){
-            nav.forEach(navs => {
-              navs.classList.add('active');
-              // document.querySelector('.navigation ul li a[href*=' + id + ']').classList.add('active')
-              
-            })
-         }
-       })
-      }
-    
-  // document.querySelectorAll('section').onscroll = function() {myFunction()}
-
-  // function myFunction() {
-  //   let top = window.scrollY;
-  //   let offset = document.querySelectorAll('section').offsetTop;
-  //   let height = document.querySelectorAll('section').offsetHeight;
-
-  //   if(top >= offset && top < offset + height){
-  //     document.body.classList.add('active')
-  //   }
-  //   // document.getElementById("demo").innerHTML = "You scrolled in div.";
-  // }
+    element.scrollIntoView({behavior:'smooth'});
+  }
 
 
   
@@ -100,7 +67,7 @@ const App = () => {
       <Gift blurr={setRelatif} id={4}/>
       <Ucapan tamu={tamu} setTamu={setTamu} id={5}/>
       <PopupTamu play={play} audioRef={audioRef} setRelatif={setRelatif} />
-      {/* <Navbar scrool={onContentIndexClick} /> */}
+      <Navbar scrool={onContentIndexClick} />
     </div>
   ); 
 };

@@ -8,7 +8,7 @@ export const Alamat = ({setModal,modal}) => {
     const [codeText,SetCodeText] = useState("copy");
     const [ikon,setIkon] = useState('content_copy');
     const [warna,setWarna] = useState('');
-    const alamat = 'Kontrakan D Bos Bawang Goreng , Jalan Kp.Bulak Mede, RT8/RW.13, Wanasari Cibitung';
+    const alamat = 'Kp. Bulak Mede RT.08/RW 13, Kel. Wanasari, Kec. Cibitung, Kab. Bekas, Kode Pos:17520 (Kontrakan D)';
     const copyCode = () =>{
         navigator.clipboard.writeText(alamat);
         SetCodeText("copied");
